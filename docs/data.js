@@ -101,8 +101,10 @@ class DataManager {
 
     // 初始化数据
     initData() {
-        // 强制使用最新的默认数据初始化，确保图片路径正确
-        localStorage.setItem('websiteData', JSON.stringify(defaultData));
+         // 只在localStorage没有数据时初始化，避免覆盖用户修改
+        if (!localStorage.getItem('websiteData')) {
+            localStorage.setItem('websiteData', JSON.stringify(defaultData));
+        }
     }
 
     // 获取所有数据
@@ -180,3 +182,4 @@ class DataManager {
 // 创建全局数据管理器实例
 
 const dataManager = new DataManager();
+
