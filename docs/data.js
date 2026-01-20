@@ -87,8 +87,8 @@ const defaultData = {
     ],
     // 联系信息
     contact: {
-        address: '北京市海淀区中关村科技园区',
-        phone: '010-12345678',
+        address: '青岛市城阳区富民路裕晶电子',
+        phone: '0532-12345678',
         email: 'info@keyuanbio.com'
     }
 };
@@ -182,4 +182,5 @@ class DataManager {
 // 创建全局数据管理器实例
 
 const dataManager = new DataManager();
+
 
