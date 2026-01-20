@@ -2,8 +2,9 @@
 
 // 页面加载完成后执行
 document.addEventListener('DOMContentLoaded', function() {
-    // 根据当前页面执行不同的初始化操作
-    let currentPage = window.location.pathname.split('/').pop();
+    // 直接获取文件名，处理不同部署环境的情况
+    const pathname = window.location.pathname;
+    let currentPage = pathname.split('/').pop();
     
     // 处理根路径情况
     if (!currentPage || currentPage === '') {
@@ -14,23 +15,45 @@ document.addEventListener('DOMContentLoaded', function() {
         currentPage += '.html';
     }
     
+    // 调试信息：打印当前页面和路径
+    console.log('Current pathname:', pathname);
+    console.log('Detected page:', currentPage);
+    
+    // 确保所有页面都能正确初始化
     switch(currentPage) {
         case 'index.html':
+            console.log('Initializing index page');
             initIndexPage();
             break;
         case 'about.html':
+            console.log('Initializing about page');
             initAboutPage();
             break;
         case 'products.html':
+            console.log('Initializing products page');
             initProductsPage();
             break;
         case 'news.html':
+            console.log('Initializing news page');
             initNewsPage();
             break;
         case 'contact.html':
+            console.log('Initializing contact page');
             initContactPage();
             break;
+        default:
+            // 处理可能的GitHub Pages部署路径
+            console.log('Unknown page, checking if it\'s index.html');
+            // 如果URL是 /repo-name/，也初始化首页
+            if (pathname.endsWith('/')) {
+                initIndexPage();
+            }
+            break;
     }
+    
+    // 调试信息：打印获取到的轮播图数据
+    const banners = dataManager.getData('banners');
+    console.log('Banners data:', banners);
 });
 
 // 初始化首页
@@ -205,4 +228,5 @@ function showMessage(elementId, message, isError = false) {
     setTimeout(() => {
         element.textContent = '';
     }, 3000);
+
 }
