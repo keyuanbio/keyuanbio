@@ -12,19 +12,19 @@ const defaultData = {
     banners: [
         {
             id: 1,
-            image: 'images/banner1.svg',
+            image: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221200%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23banner1%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A60pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22banner1%22%3E%3Crect%20width%3D%221200%22%20height%3D%22500%22%20fill%3D%22%233498db%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22442.921875%22%20y%3D%22273.3%22%3E%E5%8F%AF%E6%BA%90%E7%94%9F%E7%89%A9%E7%A7%91%E6%8A%80%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
             title: '可源生物科技',
             description: '专注于生物科技领域的创新与发展'
         },
         {
             id: 2,
-            image: 'images/banner2.svg',
+            image: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221200%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23banner2%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A60pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22banner2%22%3E%3Crect%20width%3D%221200%22%20height%3D%22500%22%20fill%3D%22%232ecc71%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22512.421875%22%20y%3D%22273.3%22%3E%E5%85%88%E8%BF%9B%E6%8A%80%E6%9C%AF%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
             title: '先进技术',
             description: '引领生物科技行业的前沿技术'
         },
         {
             id: 3,
-            image: 'images/banner3.svg',
+            image: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221200%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23banner3%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A60pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22banner3%22%3E%3Crect%20width%3D%221200%22%20height%3D%22500%22%20fill%3D%22%239b59b6%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22512.421875%22%20y%3D%22273.3%22%3E%E4%BC%98%E8%B4%A8%E6%9C%8D%E5%8A%A1%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
             title: '优质服务',
             description: '为客户提供最优质的生物科技服务'
         }
@@ -63,25 +63,25 @@ const defaultData = {
         {
             id: 1,
             name: '基因编辑技术服务',
-            image: 'images/product1.svg',
+            image: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23product1%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A20pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22product1%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%233498db%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2250.75%22%20y%3D%22160.3%22%3E%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91%E6%8A%80%E6%9C%AF%E6%9C%8D%E5%8A%A1%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
             description: '提供专业的基因编辑技术服务，包括CRISPR-Cas9技术、TALEN技术等，为科研机构和企业提供定制化的基因编辑解决方案。'
         },
         {
             id: 2,
             name: '生物酶制剂',
-            image: 'images/product2.svg',
+            image: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23product2%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A20pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22product2%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%232ecc71%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22125.75%22%20y%3D%22160.3%22%3E%E7%94%9F%E7%89%A9%E9%85%B6%E5%88%B6%E5%89%82%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
             description: '自主研发的高效生物酶制剂，广泛应用于食品加工、医药生产、环境保护等领域，具有高效、环保、安全等特点。'
         },
         {
             id: 3,
             name: '细胞培养服务',
-            image: 'images/product3.svg',
+            image: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23product3%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A20pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22product3%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%239b59b6%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22105.75%22%20y%3D%22160.3%22%3E%E7%BB%86%E8%83%9E%E5%85%BB%E5%88%9B%E6%9C%8D%E5%8A%A1%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
             description: '提供专业的细胞培养服务，包括细胞系建立、细胞扩增、细胞鉴定等，为生物医学研究和药物开发提供高质量的细胞产品。'
         },
         {
             id: 4,
             name: '生物检测服务',
-            image: 'images/product4.svg',
+            image: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23product4%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A20pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22product4%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%23e67e22%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22105.75%22%20y%3D%22160.3%22%3E%E7%94%9F%E7%89%A9%E6%A3%80%E6%B5%8B%E6%9C%8D%E5%8A%A1%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
             description: '提供全面的生物检测服务，包括分子生物学检测、蛋白质检测、细胞生物学检测等，为客户提供准确、可靠的检测结果。'
         }
     ],
@@ -178,4 +178,5 @@ class DataManager {
 }
 
 // 创建全局数据管理器实例
+
 const dataManager = new DataManager();
