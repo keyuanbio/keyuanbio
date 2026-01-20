@@ -4,7 +4,7 @@
 // 初始化默认数据
 const defaultData = {
         // 数据版本号，每次修改数据时递增
-    version: 1.2,
+    version: 1.0,
     // 管理员账号密码（实际项目中应加密存储）
     admin: {
         username: 'admin',
@@ -199,6 +199,7 @@ class DataManager {
 // 创建全局数据管理器实例
 
 const dataManager = new DataManager();
+
 
 
 
