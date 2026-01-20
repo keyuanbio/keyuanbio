@@ -1,0 +1,18 @@
+<svg width="1200" height="500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" preserveAspectRatio="none">
+  <defs>
+    <style type="text/css">
+      #banner1 text { 
+        fill: rgba(255,255,255,0.75);
+        font-weight: normal;
+        font-family: Helvetica, monospace;
+        font-size: 60pt; 
+      } 
+    </style>
+  </defs>
+  <g id="banner1">
+    <rect width="1200" height="500" fill="#3498db"></rect>
+    <g>
+      <text x="442.921875" y="273.3">可源生物科技</text>
+    </g>
+  </g>
+</svg>

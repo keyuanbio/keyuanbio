@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可源生物科技 - 站长后台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- 登录界面 -->
+        <div id="login-section" class="admin-section active">
+            <h2>站长登录</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密码:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">登录</button>
+                <div id="login-message"></div>
+            </form>
+        </div>
+
+        <!-- 管理界面 -->
+        <div id="admin-panel" class="admin-section">
+            <h2>网站管理</h2>
+            <div class="admin-nav">
+                <button class="admin-nav-btn active" data-section="banner">轮播图管理</button>
+                <button class="admin-nav-btn" data-section="about">公司信息</button>
+                <button class="admin-nav-btn" data-section="news">新闻管理</button>
+                <button class="admin-nav-btn" data-section="products">产品管理</button>
+                <button class="admin-nav-btn" data-section="contact">联系信息</button>
+                <button id="logout-btn" class="btn logout-btn">退出登录</button>
+            </div>
+
+            <!-- 轮播图管理 -->
+            <div id="banner-section" class="admin-content active">
+                <h3>轮播图管理</h3>
+                <div class="add-item">
+                    <button id="add-banner" class="btn">添加轮播图</button>
+                </div>
+                <div id="banner-list" class="item-list">
+                    <!-- 轮播图列表将通过JavaScript动态加载 -->
+                </div>
+            </div>
+
+            <!-- 公司信息管理 -->
+            <div id="about-section" class="admin-content">
+                <h3>公司信息管理</h3>
+                <div class="form-group">
+                    <label for="about-title">标题:</label>
+                    <input type="text" id="about-title" name="about-title">
+                </div>
+                <div class="form-group">
+                    <label for="about-content">内容:</label>
+                    <textarea id="about-content" name="about-content" rows="10"></textarea>
+                </div>
+                <button id="save-about" class="btn">保存</button>
+            </div>
+
+            <!-- 新闻管理 -->
+            <div id="news-section" class="admin-content">
+                <h3>新闻管理</h3>
+                <div class="add-item">
+                    <button id="add-news" class="btn">添加新闻</button>
+                </div>
+                <div id="news-items" class="item-list">
+                    <!-- 新闻列表将通过JavaScript动态加载 -->
+                </div>
+            </div>
+
+            <!-- 产品管理 -->
+            <div id="products-section" class="admin-content">
+                <h3>产品管理</h3>
+                <div class="add-item">
+                    <button id="add-product" class="btn">添加产品</button>
+                </div>
+                <div id="products-items" class="item-list">
+                    <!-- 产品列表将通过JavaScript动态加载 -->
+                </div>
+            </div>
+
+            <!-- 联系信息管理 -->
+            <div id="contact-section" class="admin-content">
+                <h3>联系信息管理</h3>
+                <div class="form-group">
+                    <label for="contact-address">地址:</label>
+                    <input type="text" id="contact-address" name="contact-address">
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone">电话:</label>
+                    <input type="text" id="contact-phone" name="contact-phone">
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">邮箱:</label>
+                    <input type="email" id="contact-email" name="contact-email">
+                </div>
+                <button id="save-contact" class="btn">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- 模态框内容将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
