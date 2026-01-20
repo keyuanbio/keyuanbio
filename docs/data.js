@@ -3,6 +3,8 @@
 
 // 初始化默认数据
 const defaultData = {
+        // 数据版本号，每次修改数据时递增
+    version: 1.1,
     // 管理员账号密码（实际项目中应加密存储）
     admin: {
         username: 'admin',
@@ -101,9 +103,24 @@ class DataManager {
 
     // 初始化数据
     initData() {
-         // 只在localStorage没有数据时初始化，避免覆盖用户修改
-        if (!localStorage.getItem('websiteData')) {
+        const existingData = localStorage.getItem('websiteData');
+        if (existingData) {
+            try {
+                const parsedData = JSON.parse(existingData);
+                // 检查数据版本号，如果版本不同则使用新数据
+                if (parsedData.version !== defaultData.version) {
+                    localStorage.setItem('websiteData', JSON.stringify(defaultData));
+                    console.log('数据已更新到最新版本:', defaultData.version);
+                }
+            } catch (e) {
+                // 解析错误时使用新数据
+                localStorage.setItem('websiteData', JSON.stringify(defaultData));
+                console.log('数据解析错误，已使用默认数据');
+            }
+        } else {
+            // 没有数据时初始化
             localStorage.setItem('websiteData', JSON.stringify(defaultData));
+            console.log('初始数据已加载');
         }
     }
 
@@ -182,5 +199,6 @@ class DataManager {
 // 创建全局数据管理器实例
 
 const dataManager = new DataManager();
+
 
 
