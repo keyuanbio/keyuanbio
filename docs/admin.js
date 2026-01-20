@@ -552,10 +552,17 @@ function saveProduct() {
         alert('请填写必填字段');
         return;
     }
+     
+    // 如果没有上传图片，使用空字符串或默认图片
+    let productImage = image;
+    if (!productImage) {
+        // 使用一个简单的base64编码的默认图片
+        productImage = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%23f0f0f0%22%3E%3C%2Frect%3E%3Ctext%20x%3D%22150%22%20y%3D%22150%22%20font-size%3D%2220%22%20fill%3D%22%23999%22%20font-family%3D%22Arial%22%3E产品图片%3C%2Ftext%3E%3C%2Fsvg%3E';
+    }
     
     const product = {
         name,
-        image: image || 'https://via.placeholder.com/400x300?text=产品图片',
+        image: productImage,
         description
     };
     
@@ -705,4 +712,5 @@ function saveContact() {
     
     dataManager.saveData('contact', contact);
     alert('联系信息保存成功');
+
 }
